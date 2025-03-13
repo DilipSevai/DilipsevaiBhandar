@@ -154,9 +154,9 @@
                     for (let i = 0; i < 15; i++) {
                         document.write(`
                             <tr>
-                                <td><input type="text" value="Rs.{products[i]}" /></td>
+                                <td><input type="text" value="{products[i]}" /></td>
                                 <td><input type="number" value="1" min="1" oninput="calculateRowTotal(this)"></td>
-                                <td><input type="number" value="Rs.{(Math.random() * 100 + 20).toFixed(2)}" oninput="calculateRowTotal(this)"></td>
+                                <td><input type="number" value="{(Math.random() * 100 + 20).toFixed(2)}" oninput="calculateRowTotal(this)"></td>
                                 <td class="row-total"></td>
                             </tr>
                         `);
